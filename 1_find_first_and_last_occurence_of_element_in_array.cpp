@@ -1,9 +1,16 @@
 #include<iostream>
 using namespace std;
 
-
-
 /**
+ * @author Jatin Vashisht
+ * @brief the way of finding first and last occurece of element in an array follows similar approach
+ * @details The algorithm of finding first occurence of element in an array is the first we will find the  index of element through binary search.
+ * Then instead of returning the elements index we will store its index inside a variable and search the left part of the array because the element can also be present before the index of current element also
+ * If we found another element in left side then we will return the index of the newly found element otherwise the previous index will be returned
+ * -1 will be returned if the element is not present in the array
+ */
+
+/*
  * @param arr array to search
  * @param start starting index from where we will start traversing the array
  * @param end  ending index upto which we will traverse the array
